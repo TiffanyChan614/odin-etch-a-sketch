@@ -30,7 +30,6 @@ function createGrid(size){
 function changeColorWhenHover(cells){
     Array.from(cells).forEach(cell => {
         cell.addEventListener('mouseover', (event) => {event.target.style.backgroundColor = "black"});
-        cell.addEventListener('mouseout', (event) => {event.target.style.backgroundColor = "grey"});
     });
 }
 

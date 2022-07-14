@@ -15,8 +15,8 @@ body{
 }
 
 .cell{
-    background-color: grey;
-    border: 1px solid darkgrey;
+    background-color: white;
+    border: 1px solid lightgrey;
     flex: 0 0 auto;
 
 }
