@@ -35,6 +35,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 1.5px 1.5px rgb(45, 48, 48, 0.8);
 }
 
 .row-container{
