@@ -56,6 +56,10 @@ function turnRainbow(){
 
 function promptGridSize(){
     let size = prompt("Enter new size: ", "");
+    while(!size){
+        alert("Size cannot be empty");
+        size = prompt("Enter new size: ", "");
+    }
     clearGrid();
     run(size);
 }
