@@ -9,7 +9,11 @@
     <script src="etch-a-sketch.js" defer></script>
 </head>
 <body>
-    <button class="prompt" onclick="promptGridSize()">Change size</button>
+    <div class="buttons">
+        <button class="size-btn" onclick="promptGridSize()">Change size</button>
+        <button class="black-btn" onclick="turnBlack()">Black pen</button>
+        <button class="rainbow-btn" onclick="turnRainbow()">Ranbow pen</button>
+    </div>
     <div class="container"></div>
 </body>
 </html>
