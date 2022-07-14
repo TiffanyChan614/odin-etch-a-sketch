@@ -1,25 +1,18 @@
 const container = document.querySelector(".container");
 
-function setCellPixel(size, cell){
-    const containerWidth = container.style.width;
-    let width = parseInt(containerWidth) / size;
-    cell.style.width = `${width}px`;
-    cell.style.height = cell.style.width;
-}
-
 function clearGrid(){
     container.textContent = "";
 }
 
 function createGrid(size){
     container.style.width = "960px";
+    container.style.height = "960px";
     for (let i = 0; i < size; i++){
         let rowContainer = document.createElement("div");
         rowContainer.classList.add("row-container");
         for (let j = 0; j < size; j++){
             let cell = document.createElement("div");
             cell.classList.add("cell", "black");
-            setCellPixel(size, cell);
             rowContainer.appendChild(cell);
         }
         container.appendChild(rowContainer);

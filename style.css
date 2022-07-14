@@ -1,27 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    margin: 20px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+}
+
+h1{
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 30px auto;
+}
+
+.canvas{
+    background-color: rgb(195, 202, 212);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(29, 29, 29, 0.6);
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 900px;
+    justify-content: center;
+    align-items: center;
 }
 
 .row-container{
     width: 100%;
     display: flex;
-    flex: 0 0 auto;
+    flex: 1 1 0;
 }
 
 .cell{
     background-color: white;
-    border: 1px solid lightgrey;
-    flex: 0 0 auto;
-
+    border: 1px solid rgb(206, 206, 206);
+    flex: 1 1 0;
 }
 
 .buttons{
-    font-size: 20px;
-    margin: 10px 0;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+button{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    flex: 1 1 auto;
+    background-color:rgb(111, 118, 125);
+    color: white;
+    box-shadow: 2px 2px rgb(29, 29, 29, 0.6);
+    border-radius: 5px;
+}
+
+button:hover, button:active{
+    background-color: rgb(45, 48, 48);
 }
