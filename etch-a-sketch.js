@@ -5,8 +5,8 @@ function clearGrid(){
 }
 
 function createGrid(size){
-    container.style.width = "960px";
-    container.style.height = "960px";
+    container.style.width = "600px";
+    container.style.height = "600px";
     for (let i = 0; i < size; i++){
         let rowContainer = document.createElement("div");
         rowContainer.classList.add("row-container");
