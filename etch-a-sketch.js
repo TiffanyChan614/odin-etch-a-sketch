@@ -1,12 +1,12 @@
-const container = document.querySelector(".container");
+const canvas = document.querySelector(".canvas");
 
 function clearGrid(){
-    container.textContent = "";
+    canvas.textContent = "";
 }
 
 function createGrid(size){
-    container.style.width = "600px";
-    container.style.height = "600px";
+    canvas.style.width = "600px";
+    canvas.style.height = "600px";
     for (let i = 0; i < size; i++){
         let rowContainer = document.createElement("div");
         rowContainer.classList.add("row-container");
@@ -15,7 +15,7 @@ function createGrid(size){
             cell.classList.add("cell", "black");
             rowContainer.appendChild(cell);
         }
-        container.appendChild(rowContainer);
+        canvas.appendChild(rowContainer);
     }
 }
 
