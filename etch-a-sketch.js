@@ -39,7 +39,6 @@ function useRainbow(event){
 }
 
 function turnBlack(){
-    console.log("turn black!");
     const cells = document.querySelectorAll(".cell");
     Array.from(cells).forEach((cell) => cell.classList.add("black"));
     Array.from(cells).forEach((cell) => cell.classList.remove("rainbow"));
@@ -47,7 +46,6 @@ function turnBlack(){
 }
 
 function turnRainbow(){
-    console.log("turn rainbow!");
     const cells = document.querySelectorAll(".cell");
     Array.from(cells).forEach((cell) => cell.classList.add("rainbow"));
     Array.from(cells).forEach((cell) => cell.classList.remove("black"));
